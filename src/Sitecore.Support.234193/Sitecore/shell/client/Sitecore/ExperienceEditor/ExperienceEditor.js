@@ -454,7 +454,8 @@
 
         experienceEditor.RibbonApp = {
             getRibbonFrame: function() {
-                return window.parent.frames["scWebEditRibbon"] || window.top.frames["scWebEditRibbon"] || window.opener.parent.frames["scWebEditRibbon"];
+				//return window.parent.frames["scWebEditRibbon"] || window.top.frames["scWebEditRibbon"];
+                return window.parent.frames["scWebEditRibbon"] || window.top.frames["scWebEditRibbon"] || window.opener.parent.frames["scWebEditRibbon"]; //sitecore.support.234193
             },
 
             getRibbonWindow: function() {
